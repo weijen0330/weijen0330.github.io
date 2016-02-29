@@ -22,6 +22,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 475px;
+    height: 350px;
+}
+
 /* Social Media Switchbook */
 *,
 *:after,
