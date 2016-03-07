@@ -5,7 +5,19 @@
 $(function() {
     $('#fullpage').fullpage({
         anchors: ['about', 'works', 'contacts'],
-        menu: '#myMenu'
+        menu: '#myMenu',
+        slidesNavigation: true
     });
-    $('.Collage').collagePlus();
+
+    /*
+    $('.Collage').collagePlus({
+        'direction': 'horizontal'
+    }); */
+
+    $('#hello').fadeIn(1500, function() {
+        $('#hello').fadeOut(1500, function() {
+            $('#bio').fadeIn(1500);
+        });
+
+    });
 });

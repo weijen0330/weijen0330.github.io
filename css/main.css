@@ -3,31 +3,64 @@
 body {
     font-family: 'Crete Round', serif;
     overflow: hidden;
-    background: #c6c6c6;
     -webkit-font-smoothing: antialiased;
 }
 
-ul {
+.section {
+    text-align: center;
+}
+
+nav {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 70;
     text-transform: uppercase;
     list-style-type: none;
+
 }
+
+nav > ul > li {
+    border-radius: 10px;
+    padding: 2px 5px 5px 5px;
+}
+
+nav > ul > li:hover {
+   background: #ADD9F4;
+}
+
+
 li {
     display: inline;
+    margin: 20px;
 }
+
 a {
     text-decoration: none;
 }
 
+#hello{
+    display: none;
+    position: absolute;
+    margin-left: 1em;
+    top: 45%;
+    left: 45%;
+}
+
+#bio {
+    display: none;
+    position: absolute;
+    margin-right: 10%;
+    top: 40%;
+    left: 10%;
+}
+
 img {
-    width: 475px;
+    width: 600px;
     height: 350px;
 }
 
-/* Social Media Switchbook */
+/* Social Media Swatchbook */
 *,
 *:after,
 *:before {
@@ -39,10 +72,9 @@ img {
     width: 10em;
     height: 13em;
     top: 50%;
-    left: 45%;
+    left: 40%;
     margin: -6.5em 0 0 -5em;
     -webkit-backface-visibility: hidden;
-    font-family: 'Ubuntu', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     text-align: center;
 }
 
@@ -80,7 +112,6 @@ img {
     bottom: .9em;
     width: 1.1em;
     height: .15em;
-    background: silver;
     background: rgba(0, 0, 0, 0.1);
     z-index: 2;
 }
@@ -88,37 +119,47 @@ img {
 .deck__link {
     text-decoration: none;
     display: block;
-    color: white;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    margin: .5em;
 }
 
 i {
     color: #fff;
-    display: block;
-    margin: .5em auto;
 }
 
-.deck__item--facebook {
-    background: #3b5998;
-    transform: rotate(-20deg);
-}
 
 .deck__item--github {
     background: #4183c4;
-    transform: rotate(-10deg);
+    transform: rotate(-15deg);
 }
 
 .deck__item--email {
     background: #00a0d1;
-    transform: rotate(0deg);
 }
 
 .deck__item--linkedin {
     background: #0e76a8;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
 }
 
 .deck__item--resume {
     background: #db4a39;
     transform: rotate(30deg);
+}
+
+#talk {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.fa-5x {
+    display: inline;
 }

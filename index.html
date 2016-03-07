@@ -4,62 +4,83 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/transitions.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Wei-Jen Chiang</title>
 </head>
 <body>
-    <ul id="myMenu">
-        <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
-        <li data-menuanchor="works"><a href="#works">Works</a></li>
-        <li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
-    </ul>
+    <nav>
+        <ul id="myMenu">
+            <li data-menuanchor="about" class="active"><a class=".round-corners" href="#about">About</a></li>
+            <li data-menuanchor="works"><a class=".round-corners" href="#works">Works</a></li>
+            <li data-menuanchor="contacts"><a class=".round-corners" href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
     <div id="fullpage">
         <div class="section">
-            <h1>Hi there!</h1>
-            <p>My name is Wei-Jen, a Junior majoring in Informatics and minoring in Math at the University of Washington </p>
+            <h1 id="hello">Hi there!</h1>
+            <p id="bio">My name is Wei-Jen, a Junior majoring in Informatics and minoring in Math at the University of Washington in Seattle, WA.
+                I love working with technology, but more importantly, I love working with people.  </p>
         </div>
         <div class="section">
-            <div class="Collage">
-                <img src="img/MARC.png" alt="Mercer Apartments Residential Council Website">
-                <img src="img/NewMolly.png" alt="Molly's Caribbean">
-                <img src="img/MARC-sign-in.png" alt="MARC Sign In Landing Page">
+            <div class="slide">
+                <img src="img/Skip-mock.jpg" alt="Skip The Line">
+            </div>
+            <div class="slide">
+                <img src="img/MARC-mock.jpg" alt="Mercer Apartment Residential Council Info Page">
+            </div>
+            <div class="slide">
+                <img src="img/Molly-mock.jpg" alt="Molly's Caribbean">
+            </div>
+            <div class="slide">
+                <img src="img/MARC-Sign-In-mock.jpg" alt="MARC Sign In Page">
+            </div>
+            <div class="slide">
+                <img src="img/TWD-mock.jpg" alt="The Walking Dead Fan Site">
+            </div>
+            <div class="slide">
+                <img src="img/Carnival-mock.jpg" alt="Carnival Cruise Line">
+            </div>
+            <div class="slide">
+                <img src="img/CarMax-mock.jpg" alt="CarMax">
             </div>
         </div>
         <div class="section">
+            <h1 id="talk">Let's Create The Next Big Thing.</h1>
             <ul class="deck">
                 <li class="deck__item deck__item--github">
                     <a class="deck__link" href="https://github.com/weijen0330" target="_blank">
+                        <i class="fa fa-github small"></i>
                         <p class="deck__label">GitHub</p>
                         <i class="fa fa-github fa-5x"></i>
                     </a>
                 </li>
                 <li class="deck__item deck__item--email">
                     <a class="deck__link" href="mailto:weijen0330@hotmail.com">
+                        <i class="fa fa-envelope-o small"></i>
                         <p class="deck__label">Email</p>
                         <i class="fa fa-envelope-o fa-5x"></i>
                     </a>
                 </li>
                 <li class="deck__item deck__item--linkedin">
                     <a class="deck__link" href="https://www.linkedin.com/in/weijenchiang" target="_blank">
+                        <i class="fa fa-linkedin-square small"></i>
                         <p class="deck_label">LinkedIn</p>
                         <i class="fa fa-linkedin-square fa-5x"></i>
                     </a>
                 </li>
                 <li class="deck__item deck__item--resume">
-                    <a class="deck__link" href="#">
+                    <a class="deck__link" href="https://drive.google.com/uc?export=download&id=0B6l-kyS9Na7-bTd4YVNUYXBGR0U">
+                        <i class="fa fa-file-text-o small"></i>
                         <p class="deck_label">Resume</p>
                         <i class="fa fa-file-text-o fa-5x"></i>
                     </a>
                 </li>
             </ul>
-            <h1>Let's Talk About Our Next Project Together.</h1>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="lib/jquery.fullPage.min.js"></script>
-    <script src="lib/jquery.collagePlus.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
