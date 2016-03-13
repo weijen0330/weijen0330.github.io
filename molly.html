@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/subpage.css">
+    <title>Molly's Caribbean - Wei-Jen Chiang</title>
+</head>
+<body>
+    <h1 id="title">Molly's Caribbean</h1>
+    <p id="summary">Updated the website for a small company based in Seattle that sells honeymoon packages to newlyweds. My team and I cleaned
+        up their  HTML and CSS code, made the site mobile friendly, and created two brand new features.</p>
+    <div>
+        <img src="img/Molly-mock.jpg" alt="Molly's Caribbean">
+    </div>
+
+    <h2>The Challenge</h2>
+    <p>Towards the end of my INFO 343 class (Client-side Web Development), we were asked to turn in a final project. One of my professors ex-students
+        reached out to us and told us that his mom was looking for someone to update the website's look and make it mobile friendly. We were excited about project,
+        but our customer asked us not to mess with the JavaScript, which we wanted to challenge ourselves for the final project, so we decided to implement
+        two new features.</p>
+
+    <h2>Figuring It Out</h2>
+    <div id="oldWeb">
+        <a href="http://www.mollyscaribbean.com/"><img src="img/Molly/Old/Website/OldMollyWeb-Home.png" alt="Old Molly's Caribbean Website - Home"></a>
+        <img src="img/Molly/Old/Website/OldMollyWeb-HomeBot.png" alt="Old Molly's Caribbean Website - Footer">
+        <a href="http://www.mollyscaribbean.com/frequently-asked-questions/"><img src="img/Molly/Old/Website/OldMollyWeb-FAQ.png" alt="Old Molly's Caribbean Website - FAQ"></a>
+        <a href="http://www.mollyscaribbean.com/contact-us/"><img src="img/Molly/Old/Website/OldMollyWeb-Email.png" alt="Old Molly's Caribbean Website - Email"></a>
+    </div>
+    <p>After sitting down face-to-face with our client Chris (representing his mom, Molly), together we were able to identify a list of issues that
+        the  <b><a href="http://www.mollyscaribbean.com/">old website</a></b> has.</p>
+    <ol>
+        <li>Molly's photo up at the top are all crammed together.</li>
+        <li>The home page (Picture 1) has two background pictures pieced together in the banner area.</li>
+        <li>There are an incredible amount of white space on all the pages.</li>
+        <li>The footer is awkwardly large on all the pages.</li>
+        <li>The contact/email form (Picture 5) is very outdated. It feels like a phishing site.</li>
+        <li>Molly meets most of her clients at wedding shows, which are hidden to the side in the "Upcoming Seattle Events"
+        and "Upcoming Portland Events" sections.</li>
+    </ol>
+
+    <div id="oldMob" class="mobile">
+        <img src="img/Molly/Old/Mobile/OldMollyMobile-Home.png" alt="Old Molly's Caribbean Mobile - Home">
+        <img src="img/Molly/Old/Mobile/OldMollyMobile-FAQ.png" alt="Old Molly's Caribbean Mobile - FAQ">
+        <img src="img/Molly/Old/Mobile/OldMollyMobile-Email.png" alt="Old Molly's Caribbean Mobile - Email">
+    </div>
+
+    <p>As for the mobile side, the words just scale very chaotically. Some of them are too big and some of them are small,
+    making it very hard on the eyes when checking out the website on a smartphone.</p>
+
+    <h2>The Solution</h2>
+    <p>Here is the <b><a href="http://www.mollyscaribbean.com/">new website!</a></b> The first task on our to-do list was to clean up the code. I noticed that the person
+        who developed the original website would specified the CSS style in the HTML file with a style tag, and even if an element is repeatedly being used,
+        such as the boxes in the FAQ section, he/she would type out the same style for all of them, producing lots of redundancy. To resolve this issue, I simply
+        created a CSS file to house all the style rules. Then, my team and I were able address each of issues we learned from our client one by one. Here how we solved
+        them respectively:</p>
+    <ol>
+        <li>We spaced out the logos out so they are not all jammed in the middle of the page and easier to look at.</li>
+        <li>We took just one of the photos and blew it up to fit the entire page.</li>
+        <li>We used the background picture to cover the entire page and place all the content in a dark overlay.</li>
+        <li>We took away the footer to make the entire page more cohesive.</li>
+        <li>Our client told us that most people actually don't even used the "Request A Quote" function in the banner area. They usually
+        just emailed her for business inquiries. We took this into consideration and eliminated the email page entirely and switched to
+        a jQuery modal plugin instead. It pops up when customers press "Email Molly", and it allows the customers to quickly return to the main
+        site when they are finished by clicking the "x" button instead of the back button.
+            This new flow makes sense to us since "Email Molly" is so frequently used.</li>
+        <li>Since our client meets the majority of her customers at wedding shows, we decided to move those dates to the top of the page where they
+        can be prominently displayed rather than hidden to the side, as well as her mission statement.
+        </li>
+    </ol>
+    <div id="newWeb">
+        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/homepage.html">
+            <img src="img/Molly/New/Website/NewMollyWeb-Home.png" alt="New Molly's Caribbean Website- Home">
+        </a>
+        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/faq.html">
+            <img src="img/Molly/New/Website/NewMollyWeb-FAQ.png" alt="New Molly's Caribbean Website- FAQ">
+        </a>
+        <img src="img/Molly/New/Website/NewMollyWeb-Email.png" alt="New Molly's Caribbean Website- Email">
+    </div>
+
+        <p>For mobile, we simply added more CSS rules so that everything scales down nicely. We also wanted to focus on simplicity, which was why
+        we took away most of the pictures on the homepage and left only important information: her logos, "Emailing Molly", mission statement, and wedding show dates. </p>
+    <div id="newMob" class="mobile">
+        <img src="img/Molly/New/Mobile/NewMollyMobile-Home.png" alt="New Molly's Caribbean Mobile - Home">
+        <img src="img/Molly/New/Mobile/NewMollyMobile-FAQ.png" alt="New Molly's Caribbean Mobile - FAQ">
+        <img src="img/Molly/New/Mobile/NewMollyMobile-Email.png" alt="New Molly's Caribbean Mobile - Email">
+    </div>
+
+    <p>Our deliverable for Chris and Molly pretty much stopped here. They used WordPress to host this site so if we did anything with JavaScript
+    it would likely be incompatible. However, we wanted to get creative, so we added two new features to the website. Just for fun. </p>
+
+    <p>I was in charge of implementing the first feature, which is a face-tracking video booth I called <b><a href="https://students.washington.edu/nordale1/info343/343FP/paradise.html">
+        "Picture Yourself In Paradise."</a></b> I wanted the customers to experience a little piece of the Caribbean from the comfort of sitting in front of their computers.
+        I worked with PhotoShop to manipulate the bikini photo slightly, HTML's camera and video element, JavaScript, as well as an open-source face-tracking library called <b><a href="https://github.com/auduno/headtrackr">headtrackr</a></b>
+        that I found online. (and yes! That's my face in the photo! Not my body though...)</p>
+
+    <p>The second one I only assisted, but it is a <b><a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/map.html">
+        weather map</a></b> of the exotic countries that Molly sends her customers to in the Caribbean. We got the idea
+        because Chris told us that the weather in the Caribbean varies greatly, and the customers definitely would not want to be rained on during
+        their honeymoon.</p>
+
+    <p>Our clients Molly and Chris really like the final product, as well as the extra features that we created for fun. </p>
+    <div id="newFeatures">
+        <a href="https://students.washington.edu/nordale1/info343/343FP/paradise.html">
+            <img src="img/Molly/New/Website/NewMollyWeb-VideoBooth.png" alt="New Molly's Caribbean Website - Video Booth">
+        </a>
+        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/map.html">
+            <img src="img/Molly/New/Website/NewMollyWeb-WeatherMap.png" alt="New Molly's Caribbean Website- Weather Map">
+        </a>
+    </div>
+
+    <h1 id="back"><a href="http://weijen.me/#works/2">back</a></h1>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/subpage.js"></script>
+</body>
+</html>

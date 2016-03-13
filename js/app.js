@@ -4,20 +4,14 @@
 
 $(function() {
     $('#fullpage').fullpage({
-        anchors: ['about', 'works', 'contacts'],
+        anchors: ['about', 'skills', 'works', 'contacts'],
         menu: '#myMenu',
         slidesNavigation: true
     });
 
-    /*
-    $('.Collage').collagePlus({
-        'direction': 'horizontal'
-    }); */
-
-    $('#hello').fadeIn(1500, function() {
-        $('#hello').fadeOut(1500, function() {
+    $('#hello').fadeIn(1500, function () {
+        $('#hello').fadeOut(1500, function () {
             $('#bio').fadeIn(1500);
         });
-
     });
-});
+})

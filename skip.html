@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/subpage.css">
+    <title>Skip The Lins - Wei-Jen Chiang</title>
+</head>
+<body>
+    <h1 id="title">Skip The Lines</h1>
+    <p id="summary">A web-based solution to help students avoid long lines at the IMA (UW's student gym) and on-campus restaurants while providing
+        facility managers data regarding business planning and employee scheduling.</p>
+    <div>
+        <img src="img/Skip-mock.jpg" alt="Skip The Line">
+    </div>
+
+    <h2>The Challenge</h2>
+    <p>In INFO 200 (Intellectual Foundations of Informatics), my team and I were tasked with the challenge creating a new information resource. In college, time is definitely money. Most of us are not just students. We can also
+        be resident advisers, athletes, musicians, waiter, research assistant, etc. However, the long lines at the Intramural Activities Building and food courts were definitely not helping.
+        We decided to tackle this problem space and create a wait-time monitoring system for UW students. </p>
+
+    <h2>Figuring It Out</h2>
+    <p>First, we identified our users. On one hand, this website will be serving UW students, faculty, staff, and visitors, using it to check the wait-time. On the other,
+        it will also be interacting with IMA and food court managers.
+        Next, we conducted interviews with our users about their needs, in which we found: </p>
+    <ol>Students
+        <li>Being able to avoid places when "rush hours" occurs</li>
+        <li>Easy method of checking restaurant and gym hours, restaurant secondary locations, restaurant menus, etc.</li>
+        <li>Being efficient about the little time they have.</li>
+    </ol>
+    <ol>Managers
+        <li>Identifying the “rush hour” to make staffing adjustments.</li>
+        <li>Spread awareness of hours of operation, restaurant secondary locations, etc.</li>
+        <li>Identify efficient/inefficient staff teams</li>
+        <li>Obtain data in order to plan better hours or more locations.</li>
+    </ol>
+
+    <p>We then created 3 personas based on our findings from talking to users.</p>
+
+    <div>
+        <img class="personas" src="img/Skip/Skip-Persona1.png" alt="Skip The Line Screen Persona 1">
+        <img class="personas" src="img/Skip/Skip-Persona2.png" alt="Skip The Line Screen Persona 2">
+        <img class="personas" src="img/Skip/Skip-Persona3.png" alt="Skip The Line Screen Persona 3">
+    </div>
+
+    <h2>The Solution</h2>
+    <p>First, we thought about using <s>the number of card swipes per 10 minutes to measure busyness</s>. The majority of UW's restaurants are cashless, and the gym requires
+    the users to swipe their student ID to enter, but we quickly crossed that out. Our reasoning being that a convenient store on campus has a high number of car swipes, but that does not necessarily indicate
+    that it's busy. Most students would just buy an apple or a bag of chips and leave, so the checkout process is actually very quick compared to a pasta or a Chinese food booth. </p>
+
+    <p>Then, we decided to go with beacons, which is a small-piece of hardware that communicate with smartphones and tablets through Bluetooth technology.</p>
+
+    <p>Restaurant managers would install one beacon at the beginning of the line and another at the end of the line. When a customer enters the line, the first beacon would record his/her
+        time. When the customer leaves, the second beacon will record that time. A server in the backend would then calculate the amount of time the customer spends in the line
+        by subtracting the two and average it out over 10 customers and provide it to our users on the website. </p>
+
+    <p>At the gym, each machine can have a beacon attached to it. If it detects a smartphone, that means
+        it is currently being occupied.</p>
+
+    <p>We believed that beacons would be the best solution because of their following qualities:</p>
+
+    <ol>
+        <li>Low cost (around $10-$12), which means it is easy to scale for a public university with a limited budget.</li>
+        <li>Low maintenance. They take about a minute to install, don't need to be plugged in, weather proof(which is a problem in Seattle),
+            and have about a 2 year battery life.</li>
+        <li>Does not require the users to perform any task to provide us with data.</li>
+    </ol>
+
+    <div>
+        <img src="img/Skip/beacon.jpg" alt="Beacons technology">
+    </div>
+
+    <p>We presented our final product as clickable wireframes at the class project fair to our program chairs, professors, teaching assistants, and classmates and received
+    many positive reviews! </p>
+    <div>
+        <img src="img/Skip/Skip-Home.png" alt="Skip The Line Screen - Home">
+        <img src="img/Skip/Skip-Pag.png" alt="Skip The Line Screen - Pagliacci Pizza">
+        <img src="img/Skip/Skip-IMA.png" alt="Skip The Line Screen - Intramural Activities Building">
+        <img src="img/Skip/Skip-Map.png" alt="Skip The Line Screen - Map">
+        <img src="img/Skip/Skip-Group.JPG" alt="Skip The Line Group">
+    </div>
+
+    <h1 id="back"><a href="http://weijen.me/#works">back</a></h1>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/subpage.js"></script>
+</body>
+</html>

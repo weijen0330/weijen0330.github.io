@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic);
+
+body {
+    font-family: 'Crete Round', serif;
+    margin: 0;
+}
+
+div {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #4C2A85;
+}
+
+a:hover {
+    border-radius: 10px;
+    padding: 2px 5px 5px 5px;
+    background: #ADD9F4;
+}
+
+img {
+    width: 350px;
+    height: 280px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 30px;
+}
+
+h2 {
+    margin-left: 1.5em;
+    text-decoration: underline;
+    color: #A95C64;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #A95C64;
+}
+
+#title {
+    color: #A95C64;
+    display: none;
+}
+
+#back {
+    text-transform: uppercase;
+}
+
+p {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.mobile > img {
+    width: 180px;
+    height: 300px;
+}
+
+.personas {
+    width: 250px;
+    height: 300px;
+}
+
+ol {
+    margin-left: 3.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+div > a:hover {
+    border-radius: initial;
+    padding: initial;
+    background: initial;
+}

@@ -17,7 +17,6 @@ nav {
     z-index: 70;
     text-transform: uppercase;
     list-style-type: none;
-
 }
 
 nav > ul > li {
@@ -29,7 +28,6 @@ nav > ul > li:hover {
    background: #ADD9F4;
 }
 
-
 li {
     display: inline;
     margin: 20px;
@@ -37,6 +35,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+nav > a:link, nav > a:visited {
+    color:#4C2A85;
 }
 
 #hello{
@@ -56,7 +58,7 @@ a {
 }
 
 img {
-    width: 600px;
+    width: 720px;
     height: 350px;
 }
 
