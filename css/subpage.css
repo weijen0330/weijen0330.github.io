@@ -25,7 +25,7 @@ a:hover {
 }
 
 img {
-    width: 350px;
+    width: 360px;
     height: 280px;
 }
 
@@ -63,7 +63,8 @@ p {
     font-size: 16px;
 }
 
-.mobile > img {
+
+.mobile > img, .mobile > a > img {
     width: 180px;
     height: 300px;
 }
@@ -83,4 +84,9 @@ div > a:hover {
     border-radius: initial;
     padding: initial;
     background: initial;
+}
+
+hr {
+    width: 95%;
+    border: 1px solid #A95C64;
 }

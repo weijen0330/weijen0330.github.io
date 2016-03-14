@@ -7,24 +7,137 @@
 </head>
 <body>
     <h1 id="title">Carnival Cruise Line</h1>
-    <div class="Collage mobile">
+    <p>A mobile app with a simple design tailored for the Carnival brand that allows the cruise guests to
+        maximize event participation and coordination among families and friends. </p>
+    <div>
         <img src="img/Carnival-mock.jpg" alt="Carnival Cruise Line">
-        <img src="img/Carnival/Carnival-QR.png" alt="Carnival Cruise Line - QR">
-        <img src="img/Carnival/Carnival-Notification.png" alt="Carnival Cruise Line - Notification">
     </div>
-    <p>In college, time is money. My team and I create Skip The Line. </p>
-    <div class="Collage mobile">
-        <img src="img/Carnival/Carnival-Calendar.png" alt="Carnival Cruise Line - Calender">
-        <img src="img/Carnival/Carnival-Schedule.png" alt="Carnival Cruise Line - Schedule">
-        <img src="img/Carnival/Carnival-List.png" alt="Carnival Cruise Line - Event List">
-        <img src="img/Carnival/Carnival-Cancel.png" alt="Carnival Cruise Line - Event Cancelling">
-        <img src="img/Carnival/Carnival-Double.png" alt="Carnival Cruise Line - Joint Schedule">
+
+    <h2>The Challenge</h2>
+    <p>This is the second project my partner and I completed in INFO 330. Here are the personas we have to work with:</p>
+    <div>
+        <img src="img/Carnival/Carnival-FamilyPersona.png" alt="Carnival Cruise Line - Family Persona">
+        <img src="img/Carnival/Carnival-SinglesPersona.png" alt="Carnival Cruise Line - Singles Persona">
     </div>
-    <p>The calender feature was the trickist to implement</p>
-    <div class="Collage mobile">
-        <img src="img/Carnival/Carnival-Party.png" alt="Carnival Cruise Line - Party">
+
+    <p>The app needs to help the users experience the ship's many events and activities without being a menu of directories or a
+        calendaring program. Instead, we are designing an intuitive tool to discover events based on customers' interests,
+        share and collaborate with others in their party, and meet other passengers. The last goal is especially important
+        for the the singles.
+    </p>
+
+    <h2>Figuring It Out</h2>
+    <p>Like <b><a href="TWD.html">The Walking Dead fansite,</a></b> we stayed away from the computers during the design phase by creating
+        paper prototypes. Below are results of the first iteration and we separated the functionality into three sections. </p>
+
+    <p>When the users first turn on the app, they will be asked to scan the QR code on their wristband ticket. We wanted to incorporate
+    a wearable element to eliminate a large amount of manual typing on the cruise. When the passengers boarded the boat,
+    they should be in vacation mode and the last thing they should worry about would be to provide us with personal information.
+    We will still be able to obtain that information with a survey when they sign up for the cruise at home. The wristband will then
+    be mailed to their house or can be printed at home.</p>
+    <div class="mobile">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-QR.png" alt="Carnival Cruise Line Paper Prototype - QR">
+    </div>
+    <p>The first section would be the "Notices" section. Our goal here is to feed as many events to the users as possible, which
+        explains the "Happening Now" block. Right below that, there is the "Request" block, which I will elaborate later
+        during the "Party" section. Last but not least, we have an "Announcement" block for any weather warnings. </p>
+    <div class="mobile">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-Notices.png" alt="Carnival Cruise Line Paper Prototype - Notices">
+    </div>
+
+    <hr>
+
+    <p>The "Schedules" will be the second section. The users can add events to their schedule by clicking the "+". Events are
+    organized based on time, with the ones that are happening now at the top because again, we want to our passengers
+    to attend as many events as possible, so if they forget to register, they still have a chance of participating.</p>
+    <p>For each individual event, the users can check out the location, price, contact the manager, see who in their party is going
+    and invite someone in their party to go with them.</p>
+    <p>The parents can use this section to sign up events for their kids.</p>
+    <div class="mobile">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-Calendar.png" alt="Carnival Cruise Line Paper Prototype - Calendar">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-Schedule.png" alt="Carnival Cruise Line Paper Prototype - Schedule">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-List.png" alt="Carnival Cruise Line Paper Prototype - List">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-Event.png" alt="Carnival Cruise Line Paper Prototype - Event">
+    </div>
+
+    <hr>
+
+    <p>Last, we have the "Party" section. All the members in your party will be automatically synced when the QR code is scanned.
+        This is for contacting members in your party, which is key for families to communicate
+        with their kids. If the users meet someone on the boat that they would like to hangout with, they can add them to the party
+        by scanning the QR code on their wristband, which will be popular among the singles.</p>
+    <p>This section ties back to the "Request" block in the "Notices" section when let's say a cute girl wants to add me to her
+    party. I will then let her scan my wristband. Then, in my "Request" area, I will see the cute girl's name and she wants to
+    join my party. After I accept the request, she can then invite me to events or message me. If she turns out to be creepy,
+    I can delete her here in this section. We think we hit the sweet point between security and easy to meet new people.</p>
+    <div class="mobile">
+        <img src="img/Carnival/Carnival-paperprototype/Carnival-Party.png" alt="Carnival Cruise Line Paper Prototype - Party">
+    </div>
+
+    <hr>
+
+    <p>After presenting our work to the class, here were the feedback we received:</p>
+    <ol>
+        <li>There are going to be big events that the passengers do not want to miss, and our app doesn't inform them with
+        that information.</li>
+        <li>There is no way of cancelling an event. Only attending. </li>
+        <li>The users might click the delete button easily. We should have some sort of confirmation.</li>
+    </ol>
+
+    <h2>The Solution</h2>
+    <p>Here is our <b><a href="http://mxhrx4.axshare.com/#p=home">final product as clickable prototype!</a></b> We were
+        able to execute the majority of our original ideas, but we did make some minor adjustments.</p>
+
+    <p>In the "Notices" section, we added the "Don't Miss These Events" part to resolve the first issue. This will
+    inform the customers about popular events that they should definitely participate. </p>
+    <div class="mobile">
+        <a href="http://mxhrx4.axshare.com/#p=home">
+            <img src="img/Carnival/Carnival-QR.png" alt="Carnival Cruise Line - QR">
+        </a>
+        <a href="http://mxhrx4.axshare.com/#p=notices">
+            <img src="img/Carnival/Carnival-Notices.png" alt="Carnival Cruise Line - Notices">
+        </a>
+    </div>
+
+    <hr>
+
+    <p>For the "Schedule" section, much of it stayed the same. We addressed the second issue by simply making the
+        "Attend" button into a toggle, so if the user is attending the event but wants to cancel, he or she can just
+        press the button again. </p>
+    <p>If the users want to see the other people's schedules (in their party only), they can tab on their name icons and the
+    schedules will merge together and be color coded. There is a line through the four names at the bottom. On the left
+    side are the people who are originally in the party, and on the right are the people who are added later through the
+    app.</p>
+    <div class="mobile">
+        <a href="http://mxhrx4.axshare.com/#p=schedule">
+            <img src="img/Carnival/Carnival-Calendar.png" alt="Carnival Cruise Line - Calender">
+        </a>
+        <a href="http://mxhrx4.axshare.com/#p=choose_event">
+            <img src="img/Carnival/Carnival-Schedule.png" alt="Carnival Cruise Line - Schedule">
+        </a>
+        <a href="http://mxhrx4.axshare.com/#p=event_listings">
+            <img src="img/Carnival/Carnival-List.png" alt="Carnival Cruise Line - Event List">
+        </a>
+        <a href="http://mxhrx4.axshare.com/#p=bingo_-_remove">
+            <img src="img/Carnival/Carnival-Cancel.png" alt="Carnival Cruise Line - Event Cancelling">
+        </a>
+        <a href="http://mxhrx4.axshare.com/#p=with_jason">
+            <img src="img/Carnival/Carnival-Double.png" alt="Carnival Cruise Line - Joint Schedule">
+        </a>
+    </div>
+
+    <hr>
+
+    <p>Last but not least, we kept everything from the "Party" section, but added the confirmation element
+     to address our third issue. If the users accidentally deleted someone from their original party, they can
+    just scan his or her ticket again. </p>
+    <div class="mobile">
+        <a href="http://mxhrx4.axshare.com/#p=party">
+            <img src="img/Carnival/Carnival-Party.png" alt="Carnival Cruise Line - Party">
+        </a>
         <img src="img/Carnival/Carnival-Confirmation.png" alt="Carnival Cruise Line - Delete Confirmation">
     </div>
+
     <h1 id="back"><a href="http://weijen.me/#works/5">back</a></h1>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/subpage.js"></script>

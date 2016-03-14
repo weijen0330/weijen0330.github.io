@@ -4,7 +4,7 @@
 
 $(function() {
     $('#fullpage').fullpage({
-        anchors: ['about', 'skills', 'works', 'contacts'],
+        anchors: ['about', 'works', 'contacts'],
         menu: '#myMenu',
         slidesNavigation: true
     });
