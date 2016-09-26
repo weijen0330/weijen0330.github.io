@@ -37,9 +37,9 @@ a {
     text-decoration: none;
 }
 
-nav > a,
 nav > a:link,
-nav > a:visited {
+nav > a:visited,
+nav > a:focus {
     color:#4C2A85;
 }
 
